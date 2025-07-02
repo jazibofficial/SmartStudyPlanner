@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Study Planner with AI Cursor Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Smart Study Planner <span id="ai-cursor-icon">🤖</span></h1>
+        <button id="theme-toggle">🌙</button>
+    </header>
+    <main>
+        <section id="tasks-section">
+            <h2>Daily Tasks</h2>
+            <form id="task-form">
+                <input type="text" id="task-input" placeholder="Add a new task..." required>
+                <button type="submit">Add</button>
+            </form>
+            <ul id="task-list"></ul>
+        </section>
+        <section id="exam-section">
+            <h2>Exam Countdown</h2>
+            <form id="exam-form">
+                <input type="date" id="exam-date" required>
+                <button type="submit">Set Exam Date</button>
+            </form>
+            <div id="countdown"></div>
+        </section>
+        <section id="notes-section">
+            <h2>Subject Notes</h2>
+            <form id="note-form">
+                <input type="text" id="subject-input" placeholder="Subject" required>
+                <textarea id="note-input" placeholder="Write your notes here..." required></textarea>
+                <button type="submit">Save Note</button>
+            </form>
+            <div id="notes-list"></div>
+        </section>
+    </main>
+    <div id="ai-cursor-tooltip" class="hidden"></div>
+    <script src="script.js"></script>
+</body>
+</html> 
